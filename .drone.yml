@@ -1,0 +1,5 @@
+pipeline:
+  acceptance:
+    image: cozero/tf-acceptance-testing:v0.11.7
+    commands:
+      - go test -v ./...
