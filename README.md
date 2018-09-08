@@ -1,7 +1,7 @@
 # t2.micro, us-east-1, graphite_server
 
 
-![build status](https://github.clouderx.com/api/badges/omarvides/terraform-monitoring/status.svg)
+[![build status](https://github.clouderx.com/api/badges/omarvides/terraform-monitoring/status.svg)](https://github.clouderx.com/omarvides/terraform-monitoring)
 
 
 
