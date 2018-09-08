@@ -2,7 +2,9 @@ pipeline:
   acceptance:
     image: cozero/tf-acceptance-testing:terratest
     commands:
-      - cd tests
+      - mkdir -p $GOPATH/src/github.com/omarvides/terraform-monitoring
+      - cp -r . $GOPATH/src/github.com/omarvides/terraform-monitoring
+      - cd $GOPATH/src/github.com/omarvides/terraform-monitoring/tests
       - go get -u github.com/golang/dep/cmd/dep
       - dep ensure
       - go test -v ./...
