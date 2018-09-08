@@ -1,8 +1,9 @@
 pipeline:
   acceptance:
-    image: cozero/tf-acceptance-testing:v0.11.7
+    image: cozero/tf-acceptance-testing:terratest
     commands:
       - cd tests
       - go get -u github.com/golang/dep/cmd/dep
       - dep ensure
       - go test -v ./...
+    secrets: [aws_access_key_id, aws_secret_access_key]
