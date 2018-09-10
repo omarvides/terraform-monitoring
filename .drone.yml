@@ -8,4 +8,5 @@ pipeline:
       - go get -u github.com/golang/dep/cmd/dep
       - dep ensure
       - go test -v ./...
+      - export TF_VAR_public_key=${TF_VAR_PUBLIC_KEY}
     secrets: [aws_access_key_id, aws_secret_access_key, tf_var_public_key]
